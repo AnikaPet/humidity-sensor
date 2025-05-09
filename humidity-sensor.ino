@@ -1,6 +1,7 @@
 #include <PubSubClient.h>  // include library we included
 #include <ESP8266WiFi.h>
 #include <stdlib.h>
+
 #include <DHT.h>
 
 #define DPIN 4
@@ -39,11 +40,18 @@ void setup() {
 }
   Serial.println("");
   Serial.println("Thingsboard connected");
+
 }
 
 void loop() {
   delay(2000);
 
+  float humidity = dht.readHumidity();
+  float temperature = dht.readTemperature();
+
+  Serial.println(humidity);
+  Serial.println("temperature:");
+  Serial.println(temperature);
   /*
   String payload = "{";
   payload += "\"rssi\":"; payload += strptr;
