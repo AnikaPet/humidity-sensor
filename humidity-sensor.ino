@@ -1,4 +1,4 @@
-#include <PubSubClient.h> // include library we included
+#include <PubSubClient.h>
 #include <ESP8266WiFi.h>
 #include <stdlib.h>
 
