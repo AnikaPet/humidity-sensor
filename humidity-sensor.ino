@@ -32,7 +32,7 @@ void setup() {
 
   pubsub_client.setServer("demo.thingsboard.io", 1883);
 
-  while (!pubsub_client.connect(device_name, access_token, NULL)) {
+  while (!pubsub_client.connect(device_id, access_token, NULL)) {
     delay(500);
   Serial.print(".");
 }
