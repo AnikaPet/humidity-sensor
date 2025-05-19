@@ -1,4 +1,5 @@
 #include <PubSubClient.h> 
+#include <ESP8266WiFi.h>
 #include <stdlib.h>
 
 #include <DHT.h>
